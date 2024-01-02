@@ -4,5 +4,6 @@ from django.urls import path,include
 from django.contrib import admin 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('/',include('shoping.urls')),] +static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path('/',include('shoping.urls')),
+    ] +static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
